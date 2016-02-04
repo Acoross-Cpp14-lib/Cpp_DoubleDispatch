@@ -31,19 +31,15 @@ void TestDDByVisitor()
 	// 가상함수 방법
 	// 잘 된다.
 
-	// 더 되어야 할 것
-	// 1. creature -> user 와 user -> creature 는 동일해야 하므로, 동일하게 처리.
-
 	using namespace std;
 	//using namespace acoross::doubledispatch;
 
 	{
-		array<unique_ptr<RelationBase>, 5> arr = 
-		{ make_unique<CreatureRelation>(),
+		array<unique_ptr<RelationBase>, 3> arr = 
+		{ 
+			make_unique<CreatureRelation>(),
 			make_unique<UserRelation>(),
 			make_unique<NpcRelation>(),
-			make_unique<PetRelation>(),
-			make_unique<SummonRelation>()
 		};
 		
 		for (auto& obj1 : arr)
