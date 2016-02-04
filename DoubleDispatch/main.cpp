@@ -4,8 +4,8 @@
 #include <vector>
 #include <array>
 
-#include "DoubleDispatch_lookup.h"
-#include "DoubleDispach_visitor.h"
+#include <./DoubleDispatch_lookup.h>
+#include <./DoubleDispach_visitor.h>
 
 void TestDDByLookup()
 {

@@ -63,7 +63,7 @@ public:
 };
 
 // double dispatch 를 위한 기능성 클래스
-// 객체의 concrete type 을 얻어내는 기능을 한다.
+// 객체의 concrete type 을 얻어내 구현 함수로 연결해주는 기능을 한다.
 class RelationBase
 {
 public:
